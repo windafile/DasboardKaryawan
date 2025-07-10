@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>belajar form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1>Form Pendaftaran</h1>
+    <form>
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" placeholder="Masukan Nama"><br><br>
+
+        <labe for="email">email</labe><br>
+        <input type="email" id="email" placeholder="Masukan Email"><br><br>
+
+        <labe for="umur">Umur</labe><br>
+        <input type="number" id="umur" placeholder="Masukan Umur"><br><br>
+
+        <button type="button" onclick="cekForm()">Kirim</button>
+    </form>
+
+    <h2>Hasil:</h2>
+    <div id="hasil"></div>
+    <script src="form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Form</title>
+    <link rel="stylesheet" href="cssgrid1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>AKU JUARA CARI CUAN DOLAR</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <a href="#">Dashboard</a>
+            <a href="#">Profil</a>
+            <a href="#">Pengaturan</a>
+            <a href="#">Logout</a>
+        </aside>
+
+        <main class="content">
+            <h1>Form Pendaftaran</h1>
+            <form class="form" autocomplete="off">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" autocomplete="nama">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email aktif" autocomplete="email">
+
+                <div class="password-wrapper">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Buat password aman" />
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                </div>
+                <button type="button" onclick="kirimData()">Daftar</button>
+            </form>
+            <div id="hasil" style="margin-top: 20px;"></div>
+
+        </main>
+    </div>
+    <script src="jss.js"></script>
+</body>
+
+</html>

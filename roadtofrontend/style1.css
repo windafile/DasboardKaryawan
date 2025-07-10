@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 30px;
+}
+h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #00ffcc;
+}
+button {
+    padding: 10px 20px;
+    background-color: #00dfb2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    transition: background-color 1s;
+}
+button:hover {
+    background-color: #fffc5b;
+}

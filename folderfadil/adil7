@@ -1,0 +1,41 @@
+import random
+
+def pilih_karakter():
+    nama_pemain = input("masukan nama karaktermu: ")
+    print("\npilih kelas:")
+    print("1. warrior (hp: 100, attack: 20, defense: 10, crit: 5%)")
+    print("2. mage (Hp: 70, attack: 30, defense: 5, Crit: 10%)")
+    print("3. Archer (Hp: 80, attack: 25 defense: 7 Crit: 5%)")
+    print("4. Tank (Hp: 120, attak: 10, defense: 30, Crit, 10%)")
+    pilihan = input("Masukan Pilihan (1/2/3/4): ")
+
+    if pilihan == "1":
+        kelas = {"kelas": "warrior", "hp": 100, "attack": 20, "defense": 10, "crit": 5}
+    elif pilihan == "2":
+        kelas = {"kelas": "mage", "hp": 70, "attack": 30, "defense": 5, "crit": 10}
+    elif pilihan == "3": 
+        kelas = {"kelas": "archer", "hp": 80, "attack": 25, "defense": 7, "crit": 15}
+    elif pilihan == "4": 
+        kelas = {"kelas": "tank", "hp": 120, "attack": 10, "defense": 30, "crit": 5}
+    else:
+        print("pilihan tidak valid. default: warrior")
+        kelas = {"kelas": "warrior", "hp": 100, "attack": 20, "defense": 10, "crit": 5}  
+
+    kelas["nama"] = nama_pemain # tambahkan nama pemain ke data karaketer
+    return kelas           
+def hitung_damage(attacker, defender):
+    crit_chance = attacker["crit"]
+    is_crit = random.randint(1, 100) <= crit_chance
+    damage = attacker["attack"] - defender["defense"]   
+
+    if damage < 0: 
+        damage = 0 
+    if is_crit:
+        damage *= 2
+        print("critical hit")
+    return damage
+def main(): 
+    player = pilih_karakter
+    musuh = {"nama": "goblin king", "hp": 110, "attack": 23, "defense": 18, "crit": 8}
+
+                 

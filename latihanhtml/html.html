@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>popup notifikasi</title>
+
+<style>
+    body {
+        height: 2000px;
+        background: #f3f3f3;
+        font-family: sans-serif;
+    }
+    .popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        background: white;
+        border-left: 5px solid #007bff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        z-index: 999;
+        transform: translate(100px);
+        opacity: 0;
+        transition: all 0.5 ease;
+        overflow-y: auto;
+        max-height: 200px;
+        border-radius: 10px;
+    }
+    .popup.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .popup h4 {
+        margin-top: 0;
+    }
+    .close-btn {
+        background: #ff4d4d;
+        border: none;
+        color: white;
+        padding: 6px 10px;
+        float: right;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="popup" id="popup">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <h4>Notif</h4>
+        <p>Ini adalah Popup Notifikasi yang muncul di pojok kanan halaman. Kamu bisa menutup popup ini dengan klik tomnol X di atas.</p>
+    </div>
+
+    <script>
+        // tampilkan pop up setelah 1 detik
+    window.onload = () => {
+        document.getElementById('popup').classList.add('show');
+    };
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+    </script>
+    
+</body>
+</html>

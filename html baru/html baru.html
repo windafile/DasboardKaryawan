@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <title>Blajar2</title>
+    <link rel="stylesheet" href="cssbaru.css">
+    <style>
+    body {
+        height: 2000px;
+        background: #f3f3f3;
+        font-family: sans-serif;
+    }
+    .popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        background: white;
+        border-left: 5px solid #007bff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        padding: 16px;
+        z-index: 999;
+        transform: translate(100px);
+        opacity: 0;
+        transition: all 0.5 ease;
+        overflow-y: auto;
+        max-height: 200px;
+        border-radius: 10px;
+    }
+    .popup.show {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .popup h4 {
+        margin-top: 0;
+    }
+    .close-btn {
+        background: #ff4d4d;
+        border: none;
+        color: white;
+        padding: 6px 10px;
+        float: right;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<div class="wrapper">
+
+    
+    <header class="header">
+        <h1>AKU JUARA CARI CUAN DOLAR</h1>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="prod-section">
+            <h2 class="judul">Produk Pilihan</h2>
+             <div class="popup" id="popup">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <h4>Notif</h4>
+        <p>Ini adalah Popup Notifikasi yang muncul di pojok kanan halaman. Kamu bisa menutup popup ini dengan klik tomnol X di atas.</p>
+    </div>
+
+    <script>
+        // tampilkan pop up setelah 1 detik
+    window.onload = () => {
+        document.getElementById('popup').classList.add('show');
+    };
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+    </script>
+    
+            <div class="grid-product">
+                <div class="grid-card">
+                    <img src="https://placehold.co/150x150?text=Produk" alt="Produk">
+                    <h3>Produk 1</h3>
+                    <p class="harga">Rp 100.000</p>
+                    <button class="btn-utama">Check Out</button>
+                </div>
+                <div class="grid-card">
+                    <img src="https://placehold.co/150x150?text=Produk" alt="Produk">
+                    <h3>Produk 2</h3>
+                    <p class="harga">Rp 100.000</p>
+                    <button class="btn-utama">Check out</button>
+                </div>
+                <div class="grid-card">
+                    <img src="https://placehold.co/150x150?text=Produk" alt="Produk">
+                    <h3>Produk 3</h3>
+                    <p class="harga">Rp 100.000</p>
+                    <button class="btn-utama">Check out</button>
+                </div>
+                <div class="grid-card">
+                    <img src="https://placehold.co/150x150?text=Produk" alt="Produk">
+                    <h3>Prodak 4</h3>
+                    <p class="harga">Rp 100.000</p>
+                    <button class="btn-utama">Check Out</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>@2025 Jadi Orang Kaya</p>
+    </footer>
+</div>
+</body>
+</html>

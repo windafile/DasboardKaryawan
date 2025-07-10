@@ -1,0 +1,28 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 5px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#pesan {
+    margin-top: 20px;
+    font-size: 18px;
+}

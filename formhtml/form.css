@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+.header {
+    background-color: red;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+}
+.header h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+.navbar a {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #0056b3;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+input, textarea, button {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+/* untuk responsive tablet */
+@media (max-width: 992px) {
+    form {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    input, textarea, button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .navbar a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login ke 2</title>
+    <link rel="stylesheet" href="loginke2.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-register" id="formRegister">
+            <h2>Sign Up</h2>
+
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" />
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" />
+                    <button type="button" id="togelPassword">🔒</button>
+                </div>
+                <small class="error-message"></small>
+            </div>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+    <script src="loginke2.js" defer></script>
+</body>
+
+</html>

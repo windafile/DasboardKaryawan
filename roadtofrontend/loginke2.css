@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+input {
+  background: #1b2838;
+  color: #e5e5e5;
+  border: 1px solid #2a475e;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0 30px #1b2838 inset !important;
+  -webkit-text-fill-color: #e5e5e5 !important;
+  caret-color: #e5e5e5;
+}
+
+input:focus {
+  outline: none;
+  background: #1b2838; /* tetap gelap saat fokus */
+  border-color: #66c0f4; /* biru khas Steam */
+}
+
+.form-register h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  color: #66c0f4;
+
+}
+.container {
+  background: #171a21;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-register h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #c7d5e0;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #3b4049;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #e5e5e5;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #66c0f4;
+  background: #2f3b48;
+}
+
+.password-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.password-wrapper input {
+  flex: 1;
+  padding-right: 2.5rem;
+}
+
+.password-wrapper button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-register button[type="submit"] {
+  padding: 0.8rem;
+  background: #66c0f4;
+  color: #02598b;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-color: #13dddd;
+}
+
+.form-register button[type="submit"]:hover {
+  background: #417a9b;
+}
+
+.error-message {
+  color: #ff6868;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: none;
+}

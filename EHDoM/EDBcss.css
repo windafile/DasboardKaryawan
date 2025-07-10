@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  padding: 40px;
+}
+
+.tombol {
+  padding: 10px 30px;
+  margin: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.7s ease;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+.tombol:hover {
+  background-color: rgb(63, 190, 190);
+}
+/* warna tombol tidak berubah setelah diklik */
+.tombol.sudah-diklik {
+  background-color: darkred;
+}
+.tombol.sudah-diklik:hover {
+  background-color: darkred;
+}

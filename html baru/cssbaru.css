@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+.main {
+    padding: 40px 20px;
+    flex: 1;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header {
+    background: hsl(0, 98%, 50%);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+}
+.header h1 {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+}
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+.navbar a{
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #f1b0b7;
+}
+.main {
+    padding: 40px 20px;
+    flex: 1;
+}
+.judul {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+.grid-product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.grid-card {
+    background: rgb(206, 205, 205);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.grid-product img {
+    width: 100%;
+    border-radius: 5px;
+}
+.grid-card h3 {
+    margin: 15px 0 10px;
+    font-size: 16px;
+}
+.harga {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.btn-utama {
+    background-color: #e96c46;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    padding: 10px 16px;
+}
+.btn-utama:hover {
+    background-color: #b93006;
+}
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #666;
+    padding: 20px;
+}
