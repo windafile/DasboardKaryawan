@@ -1,5 +1,6 @@
 import pandas as pd
-df = pd.read_csv("D:/belajar python/folderwinda/data_karyawan_latihan.csv")
+df = pd.read_csv("data/data_karyawan_latihan.csv")
+
 print(df.head())
 
 # Ambil baris yang status-nya Aktif

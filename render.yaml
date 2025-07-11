@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: dashboardcombo
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn dashboardcombo:app

@@ -2,7 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #baca data
-df = pd.read_csv("D:/belajar python/folderwinda/data_karyawan_latihan.csv")
+df = pd.read_csv("data/data_karyawan_latihan.csv")
+
 df.columns = df.columns.str.strip()
 
 # Pie Chart - Status

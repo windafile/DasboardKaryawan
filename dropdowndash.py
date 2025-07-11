@@ -3,7 +3,8 @@ import plotly.express as px
 from dash import Dash, dcc, html, Input, Output
 
 # Load dan bersihkan data
-df = pd.read_csv("D:/belajar python/folderwinda/data_karyawan_latihan.csv")
+df = pd.read_csv("data/data_karyawan_latihan.csv")
+
 df.columns = df.columns.str.strip()
 
 # Inisialisasi app
