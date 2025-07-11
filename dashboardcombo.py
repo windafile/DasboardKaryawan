@@ -1,10 +1,14 @@
+import os
+print("Current directory:", os.getcwd())
+print("Files in current directory:", os.listdir())
+print("Files in data folder:", os.listdir("data"))
+
 import pandas as pd
 import plotly.express as px
 from dash import Dash, dcc, html, Input, Output
 
 # Load data
 df = pd.read_csv("data/data_karyawan_latihan.csv")
-
 
 df.columns = df.columns.str.strip()
 
